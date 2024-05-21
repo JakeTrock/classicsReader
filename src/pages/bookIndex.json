@@ -1,0 +1,14 @@
+{
+    "books":[
+        {
+            "title":"The Odyssey",
+            "author":"Homer",
+            "location":"HomerOdyssey.txt"
+        },
+        {
+            "title":"Pride and Prejudice",
+            "author":"Jane Austen",
+            "location":"AustenPridePrejudice.txt"
+        }
+    ]
+}

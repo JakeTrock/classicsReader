@@ -14,16 +14,8 @@ export default ({ mode }: { mode: string }) => {
   process.env = { ...process.env, ...loadEnv(mode, process.cwd()) };
 
   return defineConfig({
-    base: "/vite-react-tailwind-bionic-reading/",
+    base: "/classicsreader/",
     plugins: [react()],
-    test: {
-      // Do not process css files (is slow)
-      css: false,
-      environment: 'jsdom',
-      // This is to not import test, it, expect, vi (instead of jest). Similar to how jest works
-      globals: true,
-      setupFiles: ["./src/setupTests.ts"],
-    },
     server: {
       watch: {
         usePolling: true,
